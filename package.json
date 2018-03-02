@@ -1,0 +1,17 @@
+{
+  "name": "shepherd",
+  "version": "0.1.0",
+  "description": "Desktop interface to sensor grid mesh",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Adam Shamblin <signal9@zeroecks.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.2"
+  },
+  "dependencies": {
+    "npm": "^5.7.1"
+  }
+}
