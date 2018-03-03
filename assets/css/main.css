@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Exo';
+  src: local('Exo'), url('../fonts/Exo-Regular.ttf');
+  font-weight: normal
+}
+
+body {
+  font-family: 'Exo';
+}
+
+.layout {
+  display: grid;
+  grid-template-areas: "nav main"
+                       "foot foot";
+  grid-template-rows: 1fr 1rem;
+  grid-template-columns: 100px 1fr;
+
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+section.main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: foot;
+  font-size: 0.85rem;
+  color: #708090;
+
+  display: flex;
+  justify-content: space-around;
+}

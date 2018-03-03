@@ -3,11 +3,24 @@
   <head>
     <meta charset="UTF-8"/>
     <title>Shepherd</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
   </head>
   <body>
-    <h1>Shepherd</h1>
-    <p>Node Version: <script>document.write(process.versions.node)</script></p>
-    <p>Chromium Version: <script>document.write(process.versions.chrome)</script></p>
-    <p>Electron Version: <script>document.write(process.versions.electron)</script></p>
+    <section class="layout">
+      <nav>
+        <ul>
+          <li>viz</li>
+        </ul>
+      </nav>
+      <section class="main">
+        <span>loading...</span>
+      </section>
+      <footer>
+        <div>Node: <span id="node-version"></span></div>
+        <div>Chromium: <span id="chromium-version"></span></div>
+        <div>Electron: <span id="electron-version"></span></div>
+      </footer>
+    </section>
+    <script src="./main-window.js"></script>
   </body>
 </html>
