@@ -13,6 +13,11 @@ Object.entries(versions).map(entry => {
     document.createTextNode(version));
 });
 
-ipcRenderer.on('networking', (event, msg) => {
-  console.log(msg);
+let infoOutlet = document.querySelector('.init');
+
+ipcRenderer.on('discovery', (event, msg) => {
+  let message = document.createElement('div');
+  message.appendChild(
+    document.createTextNode(msg));
+  infoOutlet.appendChild(message);
 });

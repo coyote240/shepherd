@@ -25,7 +25,11 @@ function createWindow () {
   ipcMain.on('discovery', (_, message) => {
     // This is fun for a console, but better will be to use this to
     // store and configure host/port for future app calls.
-    win.webContents.send('networking', message);
+    win.webContents.send('discovery', message);
+  });
+
+  ipcMain.on('networking', (_, message) => {
+    console.log(message);
   });
 }
 

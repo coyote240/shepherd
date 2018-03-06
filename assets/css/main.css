@@ -13,7 +13,7 @@ body {
   grid-template-areas: "nav main"
                        "foot foot";
   grid-template-rows: 1fr 1rem;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 150px 1fr;
 
   position: absolute;
   top: 10px;
@@ -26,8 +26,20 @@ nav {
   grid-area: nav;
 }
 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 section.main {
   grid-area: main;
+  margin: 10px 0px;
+}
+
+section.main .init {
+  font-size: 1.5rem;
+  color: #708090;
 }
 
 footer {
